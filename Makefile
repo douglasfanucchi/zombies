@@ -12,7 +12,7 @@ $(NAME): $(FILES) main.cpp
 
 unit: $(TEST_FILES)
 	@$(COMPILER) -I . -I ./tests -std=c++98 $(FLAGS) $(TEST_FILES) $(FILES) -o unit
-	@./unit
+	@valgrind --leak-check=full -q ./unit
 
 clean:
 	@rm -rf $(NAME)
