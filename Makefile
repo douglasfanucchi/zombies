@@ -14,6 +14,9 @@ unit: $(TEST_FILES)
 	@$(COMPILER) -I . -I ./tests -std=c++98 $(FLAGS) $(TEST_FILES) $(FILES) -o unit
 	@valgrind --leak-check=full -q ./unit
 
+e2e: $(NAME)
+	@./tests/e2e/Zombie.sh $(realpath $(NAME))
+
 clean:
 	@rm -rf $(NAME)
 
