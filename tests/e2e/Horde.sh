@@ -30,7 +30,7 @@ function test_creates_n_zombies_and_expect_its_announcement_and_destruction_mess
          expected+=$'Foo: DyiiiiiiiiiingggG...\n'
          expected+=$'Foo: DyiiiiiiiiiingggG...\n'
          expected+=$'Foo: DyiiiiiiiiiingggG...\n'
-         expected+=$'Foo: DyiiiiiiiiiingggG...\n'
+         expected+=$'Foo: DyiiiiiiiiiingggG...'
 
     local result=$(eval $executable)
 
