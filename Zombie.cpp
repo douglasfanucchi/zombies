@@ -3,6 +3,11 @@
 
 Zombie::Zombie(std::string name) : name(name) {}
 
+void Zombie::setName(std::string name)
+{
+    this->name = name;
+}
+
 std::string Zombie::getName(void)
 {
     return this->name;
