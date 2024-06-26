@@ -13,7 +13,7 @@ else
 fi
 }
 
-executable=$1
+executable="valgrind --leak-check=full -q $1"
 
 function test_creates_foo_zombie_and_expect_its_announcement_and_destruction_message()
 {
