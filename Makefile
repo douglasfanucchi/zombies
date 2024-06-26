@@ -1,7 +1,7 @@
 NAME=executable
 FLAGS=-Wall -Wextra -Werror
 FILES=Zombie.cpp
-TEST_FILES:=tests.cpp asserts.cpp unit/Zombie.cpp
+TEST_FILES:=tests.cpp asserts.cpp unit/Zombie.cpp unit/newZombie.cpp
 TEST_FILES:=$(addprefix tests/, $(TEST_FILES))
 COMPILER=c++
 
