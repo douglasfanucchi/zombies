@@ -17,3 +17,8 @@ Zombie::~Zombie(void)
 {
     std::cout << getName() + ": DyiiiiiiiiiingggG..." << std::endl;
 }
+
+void Zombie::announce(void)
+{
+    std::cout << this->getAnnounce() << std::endl;
+}

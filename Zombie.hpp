@@ -11,6 +11,7 @@ class Zombie
         std::string getName(void);
         std::string getAnnounce(void);
         ~Zombie(void);
+        void announce(void);
 };
 
 Zombie *newZombie(std::string);
